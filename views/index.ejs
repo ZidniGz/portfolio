@@ -133,7 +133,14 @@
             }
         });
     });
+if (!localStorage.getItem('hit_count')) {
+        // Jika belum ada, tambahkan hit dan simpan informasi di localStorage
+        document.getElementById("counter").innerText = "Hit berhasil ditambahkan.";
+        localStorage.setItem('hit_count', 'true');
+         fetch("https://api.counterapi.dev/v1/azmi/azmi/up")
+    }
 </script>
+
 <script
     src="https://kit.fontawesome.com/a076d05399.js"
     crossorigin="anonymous"
