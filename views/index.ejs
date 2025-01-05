@@ -79,6 +79,10 @@
             <i class="fa fa-instagram" aria-hidden="true"></i>
             <span>Instagram</span>
         </a>
+<a class="link hvr-grow" href="https://www.youtube.com/@zidnigz" target="_blank">
+            <i class="fa fa-youtube" aria-hidden="true"></i>
+            <span>YouTube</span>
+        </a>
         <a class="link hvr-grow" href="https://github.com/ZidniGz" target="_blank">
             <i class="fa fa-github" aria-hidden="true"></i>
             <span>Github</span>
@@ -116,7 +120,16 @@
     });
 
     // Show SweetAlert2 popup on page load
-    
+    document.addEventListener('DOMContentLoaded', function() {
+        Swal.fire({
+            title: 'Helo</',
+             width: 600,
+            padding: '3em',            
+            didOpen: () => {
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            }
+        });
+    });
 document.addEventListener('DOMContentLoaded', function() {
         if (!localStorage.getItem('hit_count')) {
               localStorage.setItem('hit_count', 'true');            
