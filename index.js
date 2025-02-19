@@ -12,6 +12,7 @@ app.get("/", (req,res)=>res.render("index"))
 app.get("/profile", (req, res)=>res.render("profile"))
 app.get("/termux", (req, res)=>res.redirect("https://github.com/termux/termux-app/releases/download/v0.119.0-beta.1/termux-app_v0.119.0-beta.1+apt-android-7-github-debug_universal.apk"))
 app.get("/mt-manager", (req, res)=>res.redirect("https://github.com/ZidniGz/portfolio/raw/refs/heads/main/public/assets/MT_Manager.apk"))
+app.get("/code-bot", (req, res)=>res.redirect("https://pastebin.com/x5Pf8bVH"))
 app.get("/views",async(req,res)=>{
   let { count } = await got('https://api.counterapi.dev/v1/azmi/azmi').json()
     res.json({count:count})
